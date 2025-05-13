@@ -90,7 +90,7 @@ root.render(
   </Provider>,
 )
 ```
-
+  <Provider store={store}>
 ### React 18 SSR Hydration
 
 In this example, the client has received HTML rendered by the server, as well as a serialized Redux state attached to `window`. The serialized state is used to both pre-fill the store's contents, _and_ passed as the `serverState` prop to `<Provider>`
